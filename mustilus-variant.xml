@@ -126,7 +126,7 @@
 			<p class="indent"><strong><em>Focused On The Prey.</em></strong> Once per long rest, you may designate one specific creature as your prey. You gain advantage on all checks regarding that creature, but you lose any advantage against all other creatures until your prey is dead, your goal regarding that creature is fulfilled, or you complete another long rest.</p>
 			<p class="indent"><strong><em>Roguelike.</em></strong> You have proficiency with Thieves' Tools and you can speak, read, and write Thieves' Cant.</p>
 		</description>
-		<sheet alt="Bravado" display="false" />
+		<sheet alt="Weasel" display="false" />
 		<rules>
 			<grant type="Grants" id="ID_HOMEBREW_GRANTS_MUSTILUS_VARIANT" />
 			<stat name="constitution" value="1"/>

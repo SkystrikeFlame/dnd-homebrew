@@ -174,9 +174,9 @@
 		<rules>
 			<grant type="Grants" id="ID_HOMEBREW_GRANTS_MUSTILUS_VARIANT" />
 			<stat name="dexterity" value="1" />
-			<stat name="innate speed:burrow" value="15" bonus="base" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_FERRET_INQUISITIVE_MIND" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_FERRET_UNCANNY_TRAP_SENSE" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_FERRET_BURROWER" />
 		</rules>
 	</element>
 	<element name="Inquisitive Mind" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_FERRET_INQUISITIVE_MIND">
@@ -195,6 +195,14 @@
 		<description>You have advantage on perception skill checks to detect traps.</description>
 		</sheet>
 	</element>
+	<element name="Burrower" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_FERRET_BURROWER">
+		<description>
+			<p>You have a 15-foot burrowing speed. You cannot burrow while wearing heavy armor.</p>
+		</description>
+		<sheet>
+		<description>You have a 15-foot burrowing speed. You cannot burrow while wearing heavy armor.</description>
+		</sheet>
+	</element>
 	
 	<element name="Meerkat" type="Race Variant" source="Homebrew" id="ID_HOMEBREW_RACE_VARIANT_MUSTILUS_MEERKAT">
 		<supports>Mustilus</supports>
@@ -202,15 +210,15 @@
 			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
 			<p class="indent"><strong><em>Lookout.</em></strong> While conscious, you cannot be surprised. You have proficiency in Perception. You have advantage on Perception checks to detect an ambush. During any surprise round against you, you may take the dodge action as a reaction.</p>
 			<p class="indent"><strong><em>Agile Escape.</em></strong> When using the disengage action, you may move an extra 5 feet as long as you don't move within 5 feet of another hostile creature.</p>
-			<p class="indent"><strong><em>Burrower.</em></strong> You have a 15-foot burrowing speed.</p>
+			<p class="indent"><strong><em>Burrower.</em></strong> You have a 15-foot burrowing speed. You cannot burrow while wearing heavy armor.</p>
 		</description>
 		<sheet alt="Meerkat" display="false" />
 		<rules>
 			<grant type="Grants" id="ID_HOMEBREW_GRANTS_MUSTILUS_VARIANT" />
 			<stat name="wisdom" value="1" />
-			<stat name="innate speed:burrow" value="15" bonus="base" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MEERKAT_LOOKOUT" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MEERKAT_AGILE_ESCAPE" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MEERKAT_BURROWER" />
 		</rules>
 	</element>
 	<element name="Lookout" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MEERKAT_LOOKOUT">
@@ -228,6 +236,14 @@
 		</description>
 		<sheet>
 		<description>When using the disengage action, you may move an extra 5 feet as long as you don't move within 5 feet of another hostile creature.</description>
+		</sheet>
+	</element>
+	<element name="Burrower" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MEERKAT_BURROWER">
+		<description>
+			<p>You have a 15-foot burrowing speed. You cannot burrow while wearing heavy armor.</p>
+		</description>
+		<sheet>
+		<description>You have a 15-foot burrowing speed. You cannot burrow while wearing heavy armor.</description>
 		</sheet>
 	</element>
 	

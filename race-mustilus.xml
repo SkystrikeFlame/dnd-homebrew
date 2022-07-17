@@ -5,7 +5,7 @@
 		<description></description>
 		<author>Homebrew</author>
 		<update version="0.2.5">
-			<file name="race-mustilus.xml" url= "https://github.com/SkystrikeFlame/dnd-homebrew/blob/main/race-mustilus.xml"/>
+			<file name="race-mustilus.xml" url= "https://raw.githubusercontent.com/SkystrikeFlame/dnd-homebrew/main/race-mustilus.xml?token=GHSAT0AAAAAABWVYFEQLTDV2ZQ2PPABZQA6YWTO37Q"/>
 		</update>
 	</info>
 	

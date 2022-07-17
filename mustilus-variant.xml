@@ -157,8 +157,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS"/>
-			<select type="Proficiency" name="Simple Weapon or Tool (Tinker)" supports="Simple||Tool"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
 			<grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
 		</rules>
 	</element>

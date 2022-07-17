@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mustilus</name>
+		<description></description>
+		<author>Homebrew</author>
+		<update version="0.2.5">
+			<file name="race-mustilus.xml" url= ""/>
+		</update>
+	</info>
+	
+	<element name="Mustilus" type="Race" source="Homebrew" id="ID_RACE_MUSTILUS">
+		<description>
+			<h4>MUSTILUS NAMES</h4>
+			<p>At birth, a Mustilus pup is given a name by their parents. When they reach the age of adulthood, they perform a task seeking wisdom and a vision from their patron or matron spirit. Everyone is given a different task to complete. It's never a task of great strength or ability so much as one given to find themselves and their place within the tribe or elsewhere. Once the task is fulfilled, the shaman or priestess who gave the task gives the individual a new nickname representing their achievements, their guide's request, or even a particularly strong quirk that defines them.</p>
+			<p><b>Male Names:</b> Ahusako, Diwali, Len, Naoko, Skahuli, Tasunki, Wachintanka <br/>
+			<b>Female Names:</b> Amadahy, Desba, Mituna, Meoquanee, Sinopa, Taa, Yenene <br/>
+			<h4>MUSTILUS TRAITS</h4>
+			<p>Anthropomorphic otters, skunks, weasels, meerkats, minks, mongoose, and ferrets.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Dexterity score increases by 2, and your Wisdom score increases by 1.</p>
+			<p class="indent"><b><i>Age.</i></b> Mustilus mature around the age of 8 and live up to 50 years.</p>
+			<p class="indent"><b><i>Alignment.</i></b> Mustilus are usually neutral but will lean toward chaos more often than law.</p>
+			<p class="indent"><b><i>Size.</i></b> Your size is Small.</p>
+			<p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Sharp Teeth.</i></b> You can make an unarmed bite attack for 1d4 Piercing damage.</p>
+			<p class="indent"><b><i>Subraces.</i></b> There are several varieties of Mustilus, each adapted to their own environment.</p>
+			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write Common and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Ahusako, Diwali, Len, Naoko, Skahuli, Tasunki, Wachintanka</set>
+			<set name="names" type="female">Amadahy, Desba, Mituna, Meoquanee, Sinopa, Taa, Yenene</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d12">2'7"</set>
+			<set name="weight" modifier="1d6">15 lb.</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_HOMEBREW_GRANTS_MUSTILUS_VARIANT" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_EGTW_GRANTS_DRAGONBORN_VARIANT" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON"/>
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN"/>
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SHARP_TEETH" />
+			<select type="Race Variant" name="Mustilus Variant" supports="Mustilus" optional="true" />
+		</rules>
+	</element>
+	<element name="Sharp Teeth" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SHARP_TEETH">
+		<description>
+			<p>You can make an unarmed bite attack for 1d4 Piercing damage.</p>
+			</description>
+			<description>You can make an unarmed bite attack for 1d4 Piercing damage.</description>
+		</sheet>
+	</element>
+</elements>

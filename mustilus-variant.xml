@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.2">
-			<file name="mustilus-variant.xml" url="https://raw.githubusercontent.com/SkystrikeFlame/dnd-homebrew/main/mustilus-variant.xml?token=GHSAT0AAAAAABWVYFEQGOKXLRVZDWNAEFCQYWTO3OA" />
+			<file name="mustilus-variant.xml" url="https://raw.githubusercontent.com/SkystrikeFlame/dnd-homebrew/main/mustilus-variant.xml" />
 		</update>
 	</info>
 	<element name="Otter" type="Race Variant" source="Homebrew" id="ID_HOMEBREW_RACE_VARIANT_MUSTILUS_OTTER">

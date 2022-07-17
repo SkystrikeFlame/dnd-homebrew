@@ -94,7 +94,7 @@
 			<p>You have advantage on Deception and Persuasion skill checks to any creature that is friendly.</p>
 			</description>
 		<sheet>
-			<description>You have advantage on Deception and Persuasion skill checks to any creature that is friendly.</description
+			<description>You have advantage on Deception and Persuasion skill checks to any creature that is friendly.</description>
 		</sheet>
 	</element>
 	<element name="Friendly To A Fault" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MINK_FRIENDLY_TO_A_FAULT">

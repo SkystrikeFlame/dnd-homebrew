@@ -25,7 +25,7 @@
 			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
 			<p class="indent"><b><i>Sharp Teeth.</i></b> You can make an unarmed bite attack for 1d4 Piercing damage.</p>
 			<p class="indent"><b><i>Subraces.</i></b> There are several varieties of Mustilus, each adapted to their own environment.</p>
-			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write Common and one other language of your choice.</p>
+			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write Common and Sylvan.</p>
 		</description>
 		<sheet display="false" />
 		<setters>

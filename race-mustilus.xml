@@ -52,6 +52,7 @@
 		<description>
 			<p>You can make an unarmed bite attack for 1d4 Piercing damage.</p>
 			</description>
+		<sheet>
 			<description>You can make an unarmed bite attack for 1d4 Piercing damage.</description>
 		</sheet>
 	</element>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.2">
+			<file name="mustilus-variant.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/explorers-guide-to-wildemount/races/dragonborn-variant.xml" />
+		</update>
+	</info>
+	<element name="Otter" type="Race Variant" source="Homebrew" id="ID_HOMEBREW_RACE_VARIANT_MUSTILUS_OTTER">
+		<supports>Mustilus</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Amphibious.</em></strong> You have a swim speed of 40 feet, and can hold your breath for 10 minutes.</p>
+			<p class="indent"><strong><em>Water Child.</em></strong> You have advantage on all Perception checks and gain your proficiency bonus to Passive Perception while submerged in water.</p>
+		</description>
+		<sheet alt="Otter" display="false" />
+		<rules>
+			<grant type="Grants" id="ID_HOMEBREW_GRANTS_MUSTILUS_VARIANT" />
+			<stat name="charisma" value="1" />
+			<stat name="innate speed:swim" value="40" bonus="base" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_WATER_CHILD" />
+		</rules>
+	</element>
+	<element name="Water Child" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_WATER_CHILD">
+		<description>
+			<p>You have advantage on all Perception checks and gain your proficiency bonus to Passive Perception while submerged in water.</p>
+			</description>
+		<sheet>
+				<description>You have advantage on all Perception checks and gain your proficiency bonus to Passive Perception while submerged in water.
+			</description>
+		</sheet>
+	</element>	
+
+	<element name="Skunk" type="Race Variant" source="Homebrew" id="ID_HOMEBREW_RACE_VARIANT_MUSTILUS_SKUNK">
+		<supports>Mustilus</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Skunk Spray.</em></strong> You have a natural spray attack in a 15-foot cone directly behind you. Any creature hit by this attack must succeed on a Constitution save or become stunned for 1d4 rounds. The DC for this attack equals 8 + your Dexterity modifier + your proficiency bonus. A creature hit by this attack has disadvantage on all Charisma -based skill checks for 2d4 days or until cured with a special deodorizing bath.</p>
+			<p class="indent"><strong><em>Strong Musk.</em></strong> Your natural odor is strong enough to repel most creatures. Any creature that has a sense of smell, or can otherwise sense gaseous chemicals cannot gain advantage on melee attacks against you except to counter disadvantage. You also have disadvantage on persuasion skill checks against the same creatures.</p>
+			<p class="indent"><strong><em>Poison Resistance.</em></strong> You are resistant to Poison damage.</p>
+		</description>
+		<sheet alt="Skunk" display="false" />
+		<rules>
+			<grant type="Grants" id="ID_HOMEBREW_GRANTS_MUSTILUS_VARIANT" />
+			<stat name="constitution" value="1"/>
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SKUNK_SKUNK_SPRAY" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SKUNK_STRONG_MUSK" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_SKUNK_POISON_RESISTANCE" />
+		</rules>
+	</element>	
+	<element name="Skunk Spray" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_SKUNK_SKUNK_SPRAY">
+		<description>
+			<p> You have a natural spray attack in a 15-foot cone directly behind you. Any creature hit by this attack must succeed on a Constitution save or become stunned for 1d4 rounds. The DC for this attack equals 8 + your Dexterity modifier + your proficiency bonus. A creature hit by this attack has disadvantage on all Charisma-based skill checks for 2d4 days or until cured with a special deodorizing bath</p>
+		</description>
+		<sheet>
+			<description>You have a natural spray attack in a 15-foot cone directly behind you. Any creature hit by this attack must succeed on a Constitution save or become stunned for 1d4 rounds. The DC for this attack equals 8 + your Dexterity modifier + your proficiency bonus. A creature hit by this attack has disadvantage on all Charisma-based skill checks for 2d4 days or until cured with a special deodorizing bath.</description>
+		</sheet>
+	</element>	
+	<element name="Strong Musk" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_SKUNK_STRONG_MUSK">
+		<description>
+			<p>Your natural odor is strong enough to repel most creatures. Any creature that has a sense of smell, or can otherwise sense gaseous chemicals cannot gain advantage on melee attacks against you except to counter disadvantage. You also have disadvantage on persuasion skill checks against the same creatures.</p>
+		</description>
+			<description>Your natural odor is strong enough to repel most creatures. Any creature that has a sense of smell, or can otherwise sense gaseous chemicals cannot gain advantage on melee attacks against you except to counter disadvantage. You also have disadvantage on persuasion skill checks against the same creatures.</description>
+		</sheet>
+	</element>	
+	<element name="Poison Resistance" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_SKUNK_POISON_RESISTANCE">
+		<description>
+			<p>You have resistance to poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON"/>
+		</rules>
+	</element>
+	
+	<element name="Mink" type="Race Variant" source="Homebrew" id="ID_HOMEBREW_RACE_VARIANT_MUSTILUS_MINK">
+		<supports>Mustilus</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Semi-Aquatic.</em></strong> You have a 30-foot swim speed.</p>
+			<p class="indent"><strong><em>Natural Beauty.</em></strong> You have advantage on Deception and Persuasion skill checks to any creature that is friendly.</p>
+			<p class="indent"><strong><em>Friendly To A Fault.</em></strong> You know the <i>friends</i> cantrip. Charisma is your Spellcasting ability for this spell.</p>
+		</description>
+		<sheet alt="Mink" display="false" />
+		<rules>
+			<grant type="Grants" id="ID_HOMEBREW_GRANTS_MUSTILUS_VARIANT" />
+			<stat name="charisma" value="1" />
+			<stat name="innate speed:swim" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MINK_NATURAL_BEAUTY" />
+		</rules>
+	</element>
+	<element name="Natural Beauty" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MINK_NATURAL_BEAUTY">
+		<description>
+			<p>You have advantage on Deception and Persuasion skill checks to any creature that is friendly.</p>
+			</description>
+		<sheet>
+			<description>You have advantage on Deception and Persuasion skill checks to any creature that is friendly.</description
+		</sheet>
+	</element>
+	<element name="Friendly To A Fault" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MINK_FRIENDLY_TO_A_FAULT">
+		<description>
+			<p>You know the <i>friends</i> cantrip. Charisma is your Spellcasting ability for this spell.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FRIENDS" />
+			<grant type="Racial Ability" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MINK_FRIENDLY_TO_A_FAULT_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MINK_FRIENDLY_TO_A_FAULT_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for this spell is Charisma.</p>
+		</description>
+		<sheet alt="Reach to the Blaze">
+			<description>You know the <i>friends</i> cantrip. &#13;
+			Your spellcasting ability for this spell is Charisma.</description>
+		</sheet>
+	</element>
+
+	<element name="Weasel" type="Race Variant" source="Homebrew" id="ID_HOMEBREW_RACE_VARIANT_MUSTILUS_WEASEL">
+		<supports>Mustilus</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Bravado.</em></strong> You have advantage on Wisdom saves against fear effects.</p>
+			<p class="indent"><strong><em>Focused On The Prey.</em></strong> Once per long rest, you may designate one specific creature as your prey. You gain advantage on all checks regarding that creature, but you lose any advantage against all other creatures until your prey is dead, your goal regarding that creature is fulfilled, or you complete another long rest.</p>
+			<p class="indent"><strong><em>Roguelike.</em></strong> You have proficiency with Thieves' Tools and you can speak, read, and write Thieves' Cant.</p>
+		</description>
+		<sheet alt="Bravado" display="false" />
+		<rules>
+			<grant type="Grants" id="ID_HOMEBREW_GRANTS_MUSTILUS_VARIANT" />
+			<stat name="constitution" value="1"/>
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_WEASEL_BRAVADO" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_WEASEL_FOCUSED_ON_THE_PREY" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_WEASEL_ROGUELIKE" />
+		</rules>
+	</element>	
+	<element name="Bravado" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_WEASEL_BRAVADO">
+		<description>
+			<p> You have advantage on Wisdom saves against fear effects.</p>
+			</description>
+		<sheet>
+			<description>You have advantage on Wisdom saves against fear effects.</description>
+		</sheet>
+	</element>	
+	<element name="Focused On The Prey" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_WEASEL_FOCUSED_ON_THE_PREY">
+		<description>
+			<p>Once per long rest, you may designate one specific creature as your prey. You gain advantage on all checks regarding that creature, but you lose any advantage against all other creatures until your prey is dead, your goal regarding that creature is fulfilled, or you complete another long rest.</p>
+		</description>
+				<sheet usage="1/Long Rest">
+			<description>Once per long rest, you may designate one specific creature as your prey. You gain advantage on all checks regarding that creature, but you lose any advantage against all other creatures until your prey is dead, your goal regarding that creature is fulfilled, or you complete another long rest.</description>
+		</sheet>
+	</element>	
+	<element name="Roguelike" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_WEASEL_ROGUELIKE">
+		<description>
+			<p>You have proficiency with Thieves' Tools, and you can speak, read, and write Thieves' Cant.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS"/>
+			<select type="Proficiency" name="Simple Weapon or Tool (Tinker)" supports="Simple||Tool"/>
+			<grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
+		</rules>
+	</element>
+	
+	<element name="Ferret" type="Race Variant" source="Homebrew" id="ID_HOMEBREW_RACE_VARIANT_MUSTILUS_FERRET">
+		<supports>Mustilus</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Burrower.</em></strong> You have a 15-foot burrowing speed.</p>
+			<p class="indent"><strong><em>Inquisitive Mind.</em></strong> You are proficient in the Insight skill.</p>
+			<p class="indent"><strong><em>Uncanny Trap Sense.</em></strong> You have advantage on perception skill checks to detect traps.</p>
+		</description>
+		<sheet alt="Ferret" display="false" />
+		<rules>
+			<grant type="Grants" id="ID_HOMEBREW_GRANTS_MUSTILUS_VARIANT" />
+			<stat name="dexterity" value="1" />
+			<stat name="innate speed:burrow" value="15" bonus="base" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_FERRET_INQUISITIVE_MIND" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_FERRET_UNCANNY_TRAP_SENSE" />
+		</rules>
+	</element>
+	<element name="Inquisitive Mind" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_FERRET_INQUISITIVE_MIND">
+		<description>
+			<p>You are proficient in the Insight skill.</p>
+			</description>
+		<sheet>
+		<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+		</sheet>
+	</element>
+	<element name="Uncanny Trap Sense" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_FERRET_UNCANNY_TRAP_SENSE">
+		<description>
+			<p>You have advantage on perception skill checks to detect traps.</p>
+		</description>
+		<sheet>
+		<description>You have advantage on perception skill checks to detect traps.</description>
+		</sheet>
+	</element>
+	
+	<element name="Meerkat" type="Race Variant" source="Homebrew" id="ID_HOMEBREW_RACE_VARIANT_MUSTILUS_MEERKAT">
+		<supports>Mustilus</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Lookout.</em></strong> While conscious, you cannot be surprised. You have proficiency in Perception. You have advantage on Perception checks to detect an ambush. During any surprise round against you, you may take the dodge action as a reaction.</p>
+			<p class="indent"><strong><em>Agile Escape.</em></strong> When using the disengage action, you may move an extra 5 feet as long as you don't move within 5 feet of another hostile creature.</p>
+			<p class="indent"><strong><em>Burrower.</em></strong> You have a 15-foot burrowing speed.</p>
+		</description>
+		<sheet alt="Meerkat" display="false" />
+		<rules>
+			<grant type="Grants" id="ID_HOMEBREW_GRANTS_MUSTILUS_VARIANT" />
+			<stat name="wisdom" value="1" />
+			<stat name="innate speed:burrow" value="15" bonus="base" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MEERKAT_LOOKOUT" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MEERKAT_AGILE_ESCAPE" />
+		</rules>
+	</element>
+	<element name="Lookout" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MEERKAT_LOOKOUT">
+		<description>
+			<p>While conscious, you cannot be surprised. You have proficiency in Perception. You have advantage on Perception checks to detect an ambush. During any surprise round against you, you may take the dodge action as a reaction.</p>
+			</description>
+		<sheet>
+		<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		<description>While conscious, you cannot be surprised. You have proficiency in Perception. You have advantage on Perception checks to detect an ambush. During any surprise round against you, you may take the dodge action as a reaction.</description>
+		</sheet>
+	</element>
+	<element name="Agile Escape" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MEERKAT_AGILE_ESCAPE">
+		<description>
+			<p>When using the disengage action, you may move an extra 5 feet as long as you don't move within 5 feet of another hostile creature.</p>
+		</description>
+		<sheet>
+		<description>When using the disengage action, you may move an extra 5 feet as long as you don't move within 5 feet of another hostile creature.</description>
+		</sheet>
+	</element>
+	
+	<element name="Mongoose" type="Race Variant" source="Homebrew" id="ID_HOMEBREW_RACE_VARIANT_MUSTILUS_MONGOOSE">
+		<supports>Mustilus</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Snake Killer.</em></strong> You have advantage on attacks and skill checks against reptilian creatures. You can make one opportunity attack per round against a reptilian creature that uses the disengage action. You have resistance to poisons and venoms originating from reptilian creatures.</p>
+			<p class="indent"><strong><em>Bravery.</em></strong> You have advantage on saving throws to resist fear effects.</p>
+		</description>
+		<sheet alt="Meerkat" display="false" />
+		<rules>
+			<grant type="Grants" id="ID_HOMEBREW_GRANTS_MUSTILUS_VARIANT" />
+			<stat name="dexterity" value="1" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MONGOOSE_SNAKE_KILLER" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MONGOOSE_BRAVERY" />
+		</rules>
+	</element>
+	<element name="Snake Killer" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MONGOOSE_SNAKE_KILLER">
+		<description>
+			<p>You have advantage on attacks and skill checks against reptilian creatures. You can make one opportunity attack per round against a reptilian creature that uses the disengage action. You have resistance to poisons and venoms originating from reptilian creatures.</p>
+			</description>
+		<sheet>
+		<description>While conscious, you cannot be surprised. You have proficiency in Perception. You have advantage on Perception checks to detect an ambush. During any surprise round against you, you may take the dodge action as a reaction.</description>
+		</sheet>
+	</element>
+	<element name="Bravery" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_MUSTILUS_MONGOOSE_BRAVERY">
+		<description>
+			<p>You have advantage on saving throws to resist fear effects.</p>
+		</description>
+		<sheet>
+		<description>You have advantage on saving throws to resist fear effects.</description>
+		</sheet>
+	</element>
+	
+	<element name="Mustilus Variant" type="Grants" source="Homebrew" id="ID_HOMEBREW_GRANTS_MUSTILUS_VARIANT" />
+</elements>
